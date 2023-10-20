@@ -1,0 +1,41 @@
+.video__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    justify-content: space-between;
+
+    .video {
+        margin-bottom: 50px;
+        border: 1px solid var(--black);
+        padding: 16px;
+        .video__thumb {
+
+            a {
+                display: block;
+                cursor: pointer;
+                width: 100%;
+                padding-bottom: 56.25%;
+                background-size: cover;
+                background-position: center;
+            }
+            
+        }
+
+        .video__info {
+
+            .title a {
+                margin-top: 10px;
+                margin-bottom: 5px;
+                @include line(2)
+                
+            }
+            
+            .desc {
+
+            }
+
+            .info {}
+
+
+        }
+    }
+}

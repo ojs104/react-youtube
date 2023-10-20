@@ -1,4 +1,13 @@
 body {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--black);
+}
+
+// 각 섹션의 공통 요소
+section {
+    padding: 40px;
+
+    @media (max-width: 800px){
+        padding: 20px;
+    }
 }
