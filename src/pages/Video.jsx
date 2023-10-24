@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { fetchFromAPI } from '../utils/api';
 import ReactPlayer from 'react-player';
+import { AiFillEye } from 'react-icons/ai';
+import { BiLike } from "react-icons/bi";
+import { BiCommentDots } from "react-icons/bi";
 
 
 const Video = () => {
@@ -30,16 +33,24 @@ const Video = () => {
                         />
                     </div>
                     <div className='video__info'>
-                        <h2 className='video__title'>
+                        <h3 className='video__title'>
                             {videoDetail.snippet.title}
-                        </h2>
+                        </h3>
+                        <p className='desc'>
+                             {videoDetail.snippet.description}
+                        </p>
                         <div className='video__channel'>
-                            <div className='id'></div>
-                            <div className='count'>
-                                <span className='view'></span>
-                                <span className='like'></span>
-                                <span className='comment'></span>
+                            <div className='id'> 
+                                <Link to={`/channel/${videoDetail.snippet.channelId}`}>{videoDetail.snippet.channelTitle}</Link>
                             </div>
+                            <div className='count'>
+                                <span className='view'><AiFillEye />{videoDetail.statistics.viewCount}</span>
+                                <span className='like'><BiLike/>{videoDetail.statistics.likeCount}</span>
+                                <span className='comment'><BiCommentDots/>{videoDetail.statistics.comment}</span>
+                            </div>
+                        </div>      
+                        <div className='info'>
+                            <Link to={`/channel/${videoDetail.snippet.channelId}`}>{videoDetail.snippet.channelTitle}</Link>
                         </div>
                     </div>
                 </div>

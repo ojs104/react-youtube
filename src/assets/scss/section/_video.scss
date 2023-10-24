@@ -60,7 +60,52 @@
     .video__info {
 
         .video__title {
-            padding-top: 10px;
+            padding-top: 20px;
+            margin-bottom: 20px;
+            font-size: 26px;
+            border-bottom: 1px solid var(--black600);
+            padding-bottom: 15px;
+        }
+        .desc {
+            border-top: 1px solid var(--black600);
+            white-space: pre-line;
+            padding-top: 40px;
+        }
+        .info {
+
+        }
+
+        .video__channel {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            .id {
+
+                a {
+                    border: 1px solid var(--black300);
+                    padding: 10px 20px;
+                    border-radius: 30px;
+                    margin: 1px;
+                    
+                }
+            }
+            .count {
+                span {
+                    border: 1px solid var(--black300);
+                    padding: 7px 20px;
+                    border-radius: 30px;
+                    margin-left: 5px;
+                    background-color: var(--black100);
+                    color: var(--white);
+
+                    svg{
+                        color: var(--white);
+                        margin-right: 5px;
+                    }
+
+                }
+            }
         }
     }
+    
 }
