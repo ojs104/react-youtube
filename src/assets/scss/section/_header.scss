@@ -44,7 +44,7 @@
         span {
             font-size: 26px;
             line-height: 1;
-            font-family: (--mainfont-nexon);
+            font-family: LotteriaChab;
             font-weight: 900;
             text-transform: uppercase;
 
@@ -55,28 +55,31 @@
 
 .header__menu {
     padding: 10px;
+    border-top: 1px dotted lightpink;
+    
     
     .menu {
-        border-bottom: 1px solid var(--black600);
+        border-bottom: 1px solid lightpink;
         padding: 10px 0;
 
         li {
             margin-bottom:5px;
             
             a {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 display: block;
                 line-height: 1;
                 color: var(--black100);
-                padding: 1rem 2rem 1rem 2.8rem;  
+                padding: 1rem 2rem 1rem 3.8rem;  
                 border-radius: 40px;
                 position: relative;
                 transition: background-color 0.2s;
                 border: 1px solid transparent;
 
                 &:hover {
-                    background-color:rgba(255, 222, 222, 0.376);
-                    border: 1px solid rgba(255, 222, 222, 0.694);
+                    background-color: #f5afe0;
+                    border: 1px solid gold;
+                    color: #fff;
                 }
 
                 svg {
@@ -85,13 +88,14 @@
                     position: absolute;
                     left: 1.25rem;
                     top: 0.8rem;
+                    color: red;
                 }
             }
 
             &.active {
                 a {
                     background-color:rgba(255, 222, 222, 0.376);
-                    border: 1px solid rgba(255, 222, 222, 0.694);
+                    border: 1px solid gold; 
                 }
             }
         }
@@ -104,22 +108,22 @@
             display: inline-block;
 
             a {
-                font-size: 0.9rem;
+                font-size: 1rem;
                 display: inline-block;
-                line-height: 1;
-                margin-right: 5px;
+                line-height: 1.3;
+                margin: 5px;
                 color: var(--black300);
                 padding: 0.5rem 1rem 0.5rem 1rem;  
                 border-radius: 40px;
                 position: relative;
                 transition: background-color 0.2s;
-                border: 1px solid var(--black400);
+                border: 1px solid lightcoral;
                 font-weight: 700;
 
                 &:hover {
-                    background-color: var(--black);
+                    background-color: #e8b6d9;
                     color: var(--white);
-                    border-color: var(--black);
+                    border-color: rgb(234, 27, 224);
                 }
             }
         }

@@ -5,8 +5,9 @@
 
     .video {
         margin-bottom: 50px;
-        border: 1px solid var(--black);
+        border: 1px solid var(--white100);
         padding: 16px;
+
         .video__thumb {
 
             a {
@@ -17,25 +18,49 @@
                 background-size: cover;
                 background-position: center;
             }
-            
         }
 
         .video__info {
 
-            .title a {
+            .title {
                 margin-top: 10px;
                 margin-bottom: 5px;
-                @include line(2)
-                
+                @include line-one;
             }
-            
             .desc {
-
+                width: 100%;
+                @include line(3);
+                color: var(--black300);
+                margin-bottom: 10px;
             }
+            .info {
+                display: flex;
+                justify-content: space-between;
+                color: var(--black300);
 
-            .info {}
+                .author {
+                    @include line-one;
+                }
+                .date {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
 
+// 비디오 상세 페이지
+.video__view {
 
+    .video__play {
+        width: 100%;
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+    .video__info {
+
+        .video__title {
+            padding-top: 10px;
         }
     }
 }
