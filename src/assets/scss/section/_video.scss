@@ -40,9 +40,17 @@
 
                 .author {
                     @include line-one;
+                    font-size: 14px;
+                    text-decoration: underline;
+                    text-underline-position: under;
+
+                    &:hover {
+                        color: var(--black100);
+                    }
                 }
                 .date {
                     white-space: nowrap;
+                    font-size: 14px;
                 }
             }
         }
@@ -62,16 +70,9 @@
         .video__title {
             padding-top: 20px;
             margin-bottom: 20px;
-            font-size: 26px;
+            font-size: 30px;
             border-bottom: 1px solid var(--black600);
             padding-bottom: 15px;
-        }
-        .desc {
-            border-top: 1px solid var(--black600);
-            white-space: pre-line;
-            padding-top: 40px;
-        }
-        .info {
 
         }
 
@@ -79,33 +80,39 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 40px;
-            .id {
+            margin-top: 40px;
 
+            .id {
+                
                 a {
                     border: 1px solid var(--black300);
-                    padding: 10px 20px;
+                    padding: 7px 20px;
                     border-radius: 30px;
-                    margin: 1px;
-                    
                 }
             }
             .count {
                 span {
-                    border: 1px solid var(--black300);
                     padding: 7px 20px;
                     border-radius: 30px;
                     margin-left: 5px;
-                    background-color: var(--black100);
+                    background-color:var(--black100);
                     color: var(--white);
 
-                    svg{
+                    svg {
                         color: var(--white);
+                        width: 20px;
+                        height: 20px;
+                        vertical-align: -5px;
                         margin-right: 5px;
                     }
-
                 }
             }
         }
     }
-    
+
+    .video__desc {
+        border-top: 1px solid var(--black600);
+        white-space: pre-line;
+        padding-top: 40px;
+    }
 }

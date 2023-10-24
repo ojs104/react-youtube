@@ -1,11 +1,11 @@
-#channel {}
-
+#channel {
+    padding: 0;
+}
 .channel__inner {
 
-    .channel__header{
+    .channel__header {
         width: 100%;
         height: 300px;
- 
         position: relative;
         background-position: center center;
 
@@ -13,52 +13,43 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            position: absolute;
             overflow: hidden;
+            position: absolute;
             top: 150px;
             left: 50%;
             transform: translateX(-50%);
             z-index: 100;
         }
     }
-    .channel__info{
-
-        .title{
-            font-weight: 700;
-            font-style: "nanumSquareNeo";
-            margin-top: 50px;
+    .channel__info {
+        margin-top: 100px;
+        color: var(--black);
+        text-align: center;
+    
+        .title {
+            margin-bottom: 10px;
         }
         .desc {
-            margin-top: 50px;
-            text-align: center;
-            font-weight: 500;
-
+            color: var(--black400);
+            padding: 0 10vw;
+            margin-bottom: 30px;
+            overflow-wrap: anywhere;
         }
-
-        .info {
-
-            span {
-                display: inline-block;
-                margin: 0 5px;
-                padding: 10px 15px;
-                background-color: black;
-                color: #fff;
-                border: 1px solid black;
-                border-radius: 50px;
-                text-align: center;
-                top: 90px;
-                left: 35%;
-                position: relative;
-                white-space: pre-line;
-
-                // svg {
-                //     margin: 2px;
-                // }
+        .info span {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 40px;
+            margin: 4px;
+    
+            svg {
+                width: 20px;
+                height: 20px;
+                vertical-align: -5px;
+                margin-right: 5px;
             }
         }
-
     }
-    .channel__video{}
-    .channel__more{}
-
+    .channel__video {}
+    .channel__more {}
 }

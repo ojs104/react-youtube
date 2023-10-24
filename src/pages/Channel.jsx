@@ -34,12 +34,12 @@ const Channel = () => {
                 </div>
                 <div className='channel__info'>
                     <h3 className='title'>{channelDetail.snippet.title}</h3>
+                    <p className='desc'>{channelDetail.snippet.description}</p>
                     <div className='info'>
                         <span><FcStart/>{channelDetail.statistics.subscriberCount}</span>
                         <span><FcViewDetails/>{channelDetail.statistics.videoCount}</span>
                         <span><AiFillEye/>{channelDetail.statistics.viewCount}</span>
                     </div>
-                    <p className='desc'>{channelDetail.snippet.description}</p>
                 </div>
                 <div className='channel__video video__inner'></div>
                 <div className='channel__more'></div>

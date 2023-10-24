@@ -46,11 +46,11 @@ const Video = () => {
                             <div className='count'>
                                 <span className='view'><AiFillEye />{videoDetail.statistics.viewCount}</span>
                                 <span className='like'><BiLike/>{videoDetail.statistics.likeCount}</span>
-                                <span className='comment'><BiCommentDots/>{videoDetail.statistics.comment}</span>
+                                <span className='comment'><BiCommentDots/>{videoDetail.statistics.commentCount}</span>
                             </div>
                         </div>      
-                        <div className='info'>
-                            <Link to={`/channel/${videoDetail.snippet.channelId}`}>{videoDetail.snippet.channelTitle}</Link>
+                        <div className='video__desc'>
+                            {videoDetail.snippet.description}
                         </div>
                     </div>
                 </div>
